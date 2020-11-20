@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+<link rel="stylesheet" href="calculatordesign.css">
+</head>
+<body>
+    <br>
+    <CENTER><h1>CALCULATOR</h1></CENTER>
+    <div class="container">
+        <form action="" name="calculator">
+            <h3 id="name">MCACalc fx54</h3>
+            <input type="text" name="textview" class="textview" id="textview" disabled>
+            </form>>
+        <table>
+            <tr>
+                <td><button type="button" id="on" class="button white symbol" onclick="calcOn()">ON</button></td>
+                <td><button type="button" id="off" class="button white symbol" onclick="calcOff()">OFF</button></td>
+                <td><button type="button" class="button white symbol" value="" onclick="remov()">CLR</button></td>
+                <td><button type="button" class="button white symbol" onclick="number('**')">exp</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" class="button white number" id="one" onclick="number('1')">1</button></td>
+                <td><button type="button" class="button white number" id="two" onclick="number('2')">2</button></td>
+                <td><button type="button" class="button white number" id="three" onclick="number('3')">3</button></td>
+                <td><button type="button" class="button white symbol" onclick="number('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" class="button white number" id="four" onclick="number('4')">4</button></td>
+                <td><button type="button" class="button white number" id="five" onclick="number('5')">5</button></td>
+                <td><button type="button" class="button white number" id="six" onclick="number('6')">6</button></td>
+                <td><button type="button" class="button white symbol" onclick="number('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" class="button white number" id="seven" onclick="number('7')">7</button></td>
+                <td><button type="button" class="button white number" id="eight" onclick="number('8')">8</button></td>
+                <td><button type="button" class="button white number" id="nine" onclick="number('9')">9</button></td>
+                <td><button type="button" class="button white symbol" onclick="number('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" class="button white symbol" onclick="number('.')">.</button></td>
+                <td><button type="button" class="button white number" onclick="number('0')">0</button></td>
+                <td><button type="button" class="button white symbol" value="=" onclick="result()">=</button></td>
+                <td><button type="button" class="button white symbol" onclick="number('/')">/</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="./calculate.js"></script>
+</body>
+</html>
